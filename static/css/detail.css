@@ -1,0 +1,27 @@
+.goods_info{
+	width: 700px;
+	height: 100%;
+	float: right;
+	margin: 30px 50px 20px 0;
+	/* background-color: #000000; */
+}
+
+.g_name{
+	font-size: 18px;
+}
+
+.goods_info .bt{
+	margin: 30px 100px;
+}
+
+/* .goods_info .bt button{
+	margin-left: 50px;
+} */
+
+#join{
+	margin-left: 20px;
+}
+
+#buy{
+	margin-left: 150px;
+}

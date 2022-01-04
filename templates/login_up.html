@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/layui/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/layui/css/layui.css"/>
+	</head>
+	<body>
+		<div class="login_panel layui-panel">
+			<div style="padding: 20px 15px;">
+				<label class="layui-form-label">账号</label>
+				<div class="layui-input-block">
+				  <input id="username" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+				</div><br><br>
+				
+				<label class="layui-form-label">密码</label>
+				<div class="layui-input-block">
+				  <input id="password" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+				</div>
+				
+				<button type="button" id="login" value="123123123" class="sub layui-btn layui-btn-normal">登 录</button>
+				<a href="register.html"><button type="button" class="sub reg layui-btn layui-btn-normal">注 册</button></a>
+			</div>
+	    </div>
+	</body>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		.login_panel{
+			background-color: white;
+			width: 398px;
+			height: 228px;
+			padding-top: 30px;
+		}
+		.layui-input-block input{
+			width: 200px;
+		}
+		.sub{
+			margin-top: 30px;
+		}
+	</style>
+</html>

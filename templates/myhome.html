@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/layui/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/myhome.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/myhome.css"/>
+	</head>
+
+
+	<body>
+		<div class="mainContent">
+			<div class="top">
+				<!-- logo -->
+				<img class="logoimg" src="../static/images/logo.png" >
+				<!-- 标题 -->
+				<div class="title">二手交易平台</div>
+				<div class="userLogo">
+					<img src="../static/images/user1.webp" class="layui-circle">
+					<span class="usernameshow">未登录</span>
+				</div>
+			</div>
+
+			<!-- 导航栏 -->
+			<ul class="layui-nav nnav">
+			  <li class="layui-nav-item"><a href="\main">首页</a></li>
+			  <li class="layui-nav-item">
+			    <a href="/getShopCart">购物车</a>
+			  </li>
+			  <li class="search">
+				<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="搜索商品" class="layui-input">
+				<img class="search_Bt" src="../static/images/search.png" >
+			  </li>
+			</ul>
+			<!-- 个人中心主要内容 -->
+			<div class="layui-panel">
+			        <div style="padding: 30px 30px;">
+						<div id="myhome_title">
+							个人中心
+						</div>
+						<div class="layui-tab">
+						  <ul class="t_size layui-tab-title">
+						    <li class="layui-this">个人信息</li>
+						    <li>所售商品</li>
+						    <li>订单信息</li>
+						  <!--  <li>商品管理</li>
+						    <li>订单管理</li> -->
+						  </ul>
+						  <div class="layui-tab-content">
+						    <div class="layui-tab-item layui-show">
+						       <div class="layui-panel">
+								  <div class="u_info" style="padding: 50px 0px 50px 150px;">
+									  <div class="u_name">
+									  	用户名：<span>
+									  		这里是用户名
+									  	</span>
+									  </div>
+									  <div class="u_img">
+									  	头&nbsp;&nbsp;&nbsp;像：<img src="../static/images/user1.webp" >
+									  </div>
+								  </div>
+								</div>   
+						    </div>
+						    <div class="layui-tab-item">
+								<table class="u_goods layui-table" lay-even="" lay-skin="row">
+								  <!-- <colgroup>
+								    <col width="150">
+								    <col width="150">
+								    <col width="200">
+								    <col>
+								  </colgroup>
+								  <thead>
+								    <tr>
+									  <th>商品ID</th>
+								      <th>图片缩略图</th>
+								      <th>商品名称</th>
+								      <th>商品价格</th>
+									  <th>下架</th>
+									  <th>查看</th>
+								    </tr> 
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>1</td>
+								      <td><img src="../static/images/item-detail-1.jpg"></td>
+								      <td>商品2</td>
+								      <td>4000</td>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-danger">下架</button></th>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-normal">去查看</button></th>
+								    </tr>
+								    <tr>
+								      <td>1</td>
+								      <td><img src="../static/images/item-detail-1.jpg"></td>
+								      <td>商品2</td>
+								      <td>4000</td>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-danger">下架</button></th>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-normal">去查看</button></th>
+								    </tr>
+								    <tr>
+								      <td>1</td>
+								      <td><img src="../static/images/item-detail-1.jpg"></td>
+								      <td>商品2</td>
+								      <td>4000</td>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-danger">下架</button></th>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-normal">去查看</button></th>
+								    </tr>
+								    <tr>
+								      <td>1</td>
+								      <td><img src="../static/images/item-detail-1.jpg"></td>
+								      <td>商品2</td>
+								      <td>4000</td>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-danger">下架</button></th>
+									  <th><button type="button" class="layui-btn layui-btn-sm layui-btn-normal">去查看</button></th>
+								    </tr>
+								  </tbody> -->
+								</table>
+							</div>
+						    <div class="layui-tab-item">内容3</div>
+					<!-- 	    <div class="layui-tab-item">内容4</div>
+						    <div class="layui-tab-item">内容5</div> -->
+						  </div>
+						</div>
+					</div>
+			  </div>
+			
+			
+			
+		<!-- 底部 -->
+		<!-- <hr > -->
+		<div class="footer">
+			<hr >
+			<br>
+			<div class="footer_text">
+				<ul>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+			<br>
+			<div class="copyright">
+				版权所有：软件工程课程设计第二小组
+			</div>
+		</div>
+        </div>
+
+    </body>
+</html>

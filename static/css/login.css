@@ -1,0 +1,59 @@
+body {
+	font-size: 16px;
+	background: url(../images/timg.jpg) no-repeat top center;
+	color: #fffffd;/* 字体颜色 */
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0; /* 重置浏览器样式 */
+}
+.content {
+	width: 550px;
+	height: 400px;
+	padding-top: 60px;
+	margin: 250px auto;                     /* 使表单在浏览器居中 */
+	background: rgba(255,255,255,0.1);           /* 为表单添加背景颜色 */
+	border-radius: 20px;
+	border: 1px solid rgba(255,255,255,0.3);
+}
+ form p {
+	margin-top: 30px;
+	text-align:center;
+}
+p span {
+	width: 160px;
+	text-align: right;
+	display: inline-block;
+}
+.user,.email,.pwd,.captcha {
+	width: 165px;
+	height: 18px;
+	border: 1px solid rgba(255,255,255,0.3);
+	padding: 2px 2px 2px 15px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: rgba(255,255,255,0.1);
+}
+
+#change{
+	cursor:pointer;
+	width:120px;
+	height:37px;	
+}
+.register,.login{
+	display: block;
+	width: 80px;
+	height: 25px;
+	border-radius: 3px;
+	border: 2px solid #000;
+	margin:0px auto;
+	background: #57b2c9;
+	color: #fff;
+	border: none;	
+}
+.apply_regi{
+	margin:70px 0px 0px 400px;
+	font-size: 14px;
+}
+ 

@@ -1,0 +1,147 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.frame{
+	background:#ffffff;
+	margin: 20px auto;
+	display: table;
+	position: relative;
+	width: 100%;
+}
+.frame .top{
+
+	height: 60px;
+	line-height: 60px;
+	margin: 10px;
+	background: #F7F7F7;
+	display: flex;
+}
+.mid{
+	height: 750px;
+	margin: 10px;
+	padding: 20px;
+	background: #E8E8E8;
+	overflow-y:scroll;
+}
+.bottom{
+
+	height: 80px;
+	margin: 10px;
+	background: #F7F7F7;
+	overflow: hidden;
+}
+.top_left{
+	vertical-align: middle;
+	margin-left: 40px;
+	display: inline-block;
+}
+.top_mid{
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 150px;
+}
+.box_search{
+	width: 500px;
+	height: 40px;
+	display: inline-block;
+}
+.btn_search{
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 20px;
+	background: #FFC125;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	border-radius: 5px;
+	border:0;
+}
+
+.list_frame{
+	margin: 20px auto;
+	padding: 5px;
+	background: #fafafa;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+
+}
+
+.checkbox{
+	display: inline-block;
+	float: left;
+	margin:0 20px;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+
+}
+.img{
+	display: inline-block;
+	width: 160px;
+	height: 160px;
+	margin-left: 60px;
+	float: left;
+	border-radius:10px;
+}
+.item_text{
+	display: inline-block;
+	width: 600px;
+	height: 160px;
+	float: left;
+	margin: 0 20px;
+}
+.item_text_name{
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	margin:0 20px;
+	font-size: 25px;
+}
+.item_text_info{
+	display: inline-block;
+	width: 500px;
+	height: 100px;
+	margin:0 20px ;
+
+}
+.price_buss{
+	display: inline-block;
+	float: left;
+	margin-top: 70px;
+	font-size: 20px;
+}
+.btn_buss{
+	display: inline-block;
+	float: right;
+	padding: 10px;
+	width: 100px;
+	margin-top: 60px;
+	margin-right: 20px;
+	background:#FFC125;
+	border:0;
+	border-radius:10px;
+}
+.price_all{
+	display: inline-block;
+	margin-right: 20px;
+	color: #ff9900;
+}
+.btn_price{
+	float: right;
+	font-size: 20px;
+}
+.btn_all{
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 18px;
+	padding: 10px;
+	width: 100px;
+	border:0;
+	border-radius:10px;
+	background:#FFC125;
+}

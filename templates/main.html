@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/layui/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/main.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+	</head>
+
+
+	<body>
+		<div class="mainContent">
+			<div class="top">
+				<!-- logo -->
+				<img class="logoimg" src="../static/images/logo.png" >
+				<!-- 标题 -->
+				<div class="title">二手交易平台</div>
+				<div class="userLogo">
+					<img src="../static/images/user1.webp" class="layui-circle">
+					<span class="usernameshow">未登录</span>
+				</div>
+			</div>
+
+			<!-- 导航栏 -->
+			<ul class="layui-nav nnav">
+			  <li class="layui-nav-item layui-this"><a href="/main">首页</a></li>
+			  <li class="layui-nav-item">
+			    <a href="/getShopCart">购物车</a>
+			  </li>
+			  <li class="search">
+				<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="搜索商品" class="layui-input">
+				<img class="search_Bt" src="../static/images/search.png" >
+			  </li>
+			</ul>
+			<!-- 分类及大图位置 -->
+			<div class="banner">
+				<ul class="lnav layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
+				  {%  for row in res_classify %}
+				  <li class="layui-nav-item"><a href="">{{ row.classify_name }}</a></li>
+                    {% endfor %}
+				</ul>
+
+				<div class="lbt layui-carousel" id="test1" lay-filter="test1">
+				  <div carousel-item="">
+				    <div><img src="../static/images/1.jpg"></div>
+				    <div><img src="../static/images/2.jpg"></div>
+				    <div><img src="../static/images/3.jpg"></div>
+				    <div><img src="../static/images/4.jpg"></div>
+				    <div><img src="../static/images/5.jpg"></div>
+				  </div>
+				</div>
+			</div>
+			<!-- 商品主要位置 -->
+			<div class="goods">
+				  <div class="layui-card">
+					<div class="layui-card-header">推荐商品</div>
+					<div class="layui-card-body">
+							<!-- 商品列表 -->
+                        {%  for row in res_goods %}
+    				  <div class="goods_one layui-panel">
+						<div>
+							<img src="{{ row.goods_pic_path }}" >
+							<div class="goods_title">
+								<a href="/detail?goods_id={{ row.goods_id }}">{{ row.goods_name }}</a>
+							</div>
+							<div class="goods_price">
+								<span class="goods_price_text">{{ row.goods_price }}元</span>
+							</div>
+						</div>
+					  </div>
+                        {% endfor %}
+
+				    </div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<!-- <hr > -->
+		<div class="footer">
+			<hr >
+			<br>
+			<div class="footer_text">
+				<ul>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+			<br>
+			<div class="copyright">
+				版权所有：软件工程课程设计第二小组
+			</div>
+		</div>
+        </div>
+
+    </body>
+</html>

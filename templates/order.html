@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/layui/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/main.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/order.css"/>
+	</head>
+	
+	<div id="login_up" style="background-color: #DDD; display: none;" >
+		<input type="" name="" id="" value="" /><br>
+		<input type="" name="" id="" value="" /><br>
+		<button type="button">123</button>
+	</div>
+	
+	<body>
+		<div class="mainContent">
+			<div class="top">
+				<!-- logo -->
+				<img class="logoimg" src="../static/images/logo.png" >
+				<!-- 标题 -->
+				<div class="title">二手交易平台</div>
+				<div class="userLogo">
+					<img src="../static/images/user1.webp" class="layui-circle">
+					<span class="usernameshow">未登录</span>
+				</div>
+			</div>
+			
+			<!-- 导航栏 -->
+			<ul class="layui-nav nnav">
+			  <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">购物车</a>
+			  </li>
+			  <li class="search">
+				<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="搜索商品" class="layui-input">
+				<img class="search_Bt" src="../static/images/search.png" >
+			  </li>
+			</ul>
+		<div class="order_content">	
+			<form id="sub_f" class="layui-form" action="/buy" method="post" onsubmit="return saveRro();">
+				<p style="margin-left:33px; font-size:14px; font-weight: 600;">个人信息:</p>
+				<div class="layui-form-item" style="margin-top:30px;">
+				<label class="layui-form-label">地址:</label>
+					<div class="layui-input-block">
+					<input type="text" name="address" required  lay-verify="required" placeholder="请输入地址" autocomplete="off" class="layui-input" style="width:400px;">
+				</div>
+				<div class="layui-form-item" style="margin-top: 30px;">
+				<label class="layui-form-label">手机号:</label>
+					<div class="layui-input-block">
+					<input type="text" name="phone" required  lay-verify="required" placeholder="请输入手机号" autocomplete="off" class="layui-input" style="width:400px;">
+				</div>
+				<hr style="background-color:white; height:2px; width:1180px; margin-left:10px; margin-top:25px;"/>
+					<p style="margin-left:61px; font-size:14px; font-weight: 600;">支付:</p>
+					<hr/>
+					<label class="layui-form-label">支付方式:</label>
+					<div class="layui-input-block">
+						  <input type="radio" name="ways" value="微信" title="微信">
+						  <input type="radio" name="ways" value="支付宝" title="支付宝" checked>
+					</div>
+					<hr/>
+				  <div class="layui-form-item">
+						<label class="layui-form-label">发票:</label>
+						<div class="layui-input-block">
+						  <input type="checkbox" name="like[write]" title="打印">
+						</div>
+					<hr/>
+				  </div>
+				      <label class="layui-form-label">密码:</label>
+				      <div class="layui-input-inline">
+				        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+				      </div>
+				  </div>
+	  				<hr style="background-color:white; height:2px; width:1180px; margin-left:10px; margin-top:25px;"/>
+				    <div class="layui-form-item">
+					<hr/>
+				      <div class="layui-input-block">
+  				        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+				        <button class="layui-btn" lay-submit lay-filter="formDemo" onClick="closes()">购买</button>
+				      </div>
+				    </div>
+			  </div>
+			</form>
+		</div>
+
+
+		<div class="footer">
+			<hr >
+			<br>
+			<div class="footer_text">
+				<ul>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+			<br>
+			<div class="copyright">
+				版权所有：软件工程课程设计第二小组
+			</div>
+		</div>
+        </div>
+    </body>
+
+        <script type="text/javascript">
+                  // function closes(){
+                  //   alert('购买成功!!!');
+                  //   window.open('/myhome.html');
+                  // }
+				  
+				  
+				  function saveRro() { 
+						$("#sub_f").ajaxSubmit(function(message) { 
+							console.log(message);
+						}); 
+						console.log("edfgsdfgsd");
+						return false; // 返回false，阻止跳转
+				  } 
+		</script>
+</html>

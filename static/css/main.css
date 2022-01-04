@@ -1,0 +1,163 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #EEE;
+}
+
+.mainContent{
+	width: 1200px;
+	height: 100%;
+	/* background-color: #0000FF; */
+	margin: 0 auto;
+}
+.top{
+	height: 100px;
+	/* background-color: #00FFFF; */
+}
+
+.logoimg{
+	width: 100px;
+	height: 100px;
+	/* background-color: #009688; */
+	float: left;
+}
+.title{
+	float: left;
+	font-size: 40px;
+	/* background-color: #009688; */
+	height: 100px;
+	line-height: 100px;
+}
+
+.nnav{
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.lnav{
+	height: 380px!important;
+	width: 230px!important;
+}
+
+.banner{
+	height: 380px;
+	/* background-color: #0000FF; */
+}
+
+.lbt{
+	float: right;
+}
+
+.lbt div img{
+	width: 100%;
+}
+
+.goods{
+	margin-top: 10px;
+}
+
+/* .maingoods{
+	margin-top: 20px;
+	width: 100%!important;
+	height: 100%;
+} */
+
+.goods_one{
+	transition: all 0.5s;
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	margin: 14px;
+}
+
+.goods_one img{
+	width: 200px;
+}
+.goods_title{
+	margin: 5px 10px;
+}
+
+.goods_title a{
+	color: coral;
+}
+
+.goods_price{
+	width: 100%;
+}
+
+.goods_price_text{
+	font-size: 26px;
+	color: crimson;
+	height: 50px;
+	line-height: 30px;
+	float: right;
+	margin-right: 10px;
+}
+
+.goods_one:hover{
+	transform: scale(1.1);
+}
+
+
+.footer{
+	width: 100%;
+	height: 120px;
+	background-color: #FFF;
+}
+
+
+.footer_text,.copyright{
+	text-align: center;
+}
+
+.footer_text ul li{
+	display: inline-block;
+}
+
+.footer_text ul li a,.footer_text ul li span,.copyright{
+	color: #999;
+	font-size:16px;
+}
+
+.search{
+	display: inline-block;
+	float: right;
+	width: 200px;
+	margin-top: 10px;
+}
+
+.search img{
+	width: 23px;
+	height: 23px;
+	margin-top: -30px;
+	margin-right: 10px;
+	float: right;
+	transition: all 0.3s;
+}
+
+.search img:hover{
+	transform: scale(1.1);
+	
+}
+
+.userLogo{
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	margin-top: 20px;
+	float: right;
+}
+
+.userLogo img{
+	height: 100%;
+}
+
+.usernameshow{
+	font-size: 26px;
+	margin-left: 10px;
+}

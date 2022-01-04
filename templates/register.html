@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+	<link rel="stylesheet" href="../static/css/login.css">
+	<script type="text/javascript">
+			window.onload=function(){
+				var chang=document.getElementById("change");
+				var num;//随机数字
+				var pic="";//随机图片路径
+				chang.onclick=function(){
+				var img="";
+					for(var i=0;i<4;i++){
+						num=Math.floor(Math.random()*10);
+						pic="<img src='../static/images/"+num+".png' />";
+						img=img+pic;
+				}
+				var oCode=document.getElementById('code');
+				oCode.innerHTML=img;
+			  }
+			}
+	</script>
+	</head>
+	<body>
+		<div class="content">
+			<form action="\registered" method="post">
+				<p>
+					<span>请输入用户名：</span>
+					<input type="text" name="username" class="user">
+				</p>
+				<p>
+					<span>请输入邮箱：</span>
+					<input type="email" name="email" class="email">
+				</p>
+				<p>
+					<span>请输入密码：</span>
+					<input type="password" name="password" class="pwd">
+				</p>
+{#				<p>#}
+{#					<span>请输入验证码：</span>#}
+{#					<input type="text" class="captcha">#}
+{#				</p>#}
+{#				<p>#}
+{#					<span id="code">#}
+{#						<img src="../static/images/1.png" alt=""/><img src="../static/images/2.png" alt=""/><img src="../static/images/3.png" alt=""/><img src="../static/images/4.png" alt=""/>#}
+{#					</span>#}
+{#					<span id="change">#}
+{#						<input type="button" value="看不清,换一张" />#}
+{#					</span>	#}
+{#				</p>#}
+				<p>
+					<input type="submit" class="register" value="注册">
+				</p>
+			</form>
+		</div>
+	</body>
+</html>
